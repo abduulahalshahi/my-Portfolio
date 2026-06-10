@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== ثيم داكن (أزرق + أسود) ===== */
+:root {
+  --bg:      #030d1a;
+  --surface: #0a1828;
+  --bdr:     #1a3555;
+  --muted:   #6b8ba4;
+  --fore:    #ddeeff;
+}
+
+/* ===== ثيم فاتح ===== */
+html.light {
+  --bg:      #c3c8cd;
+  --surface: #ffffff;
+  --bdr:     #e2e8f0;
+  --muted:   #64748b;
+  --fore:    #1e293b;
+}
+
+* { -webkit-font-smoothing: antialiased; }
+
+/* حجم الخط يتناسب مع حجم الشاشة — صغير على الجوال وأكبر على الشاشات الكبيرة */
+html { font-size: clamp(15px, 1.8vw, 18px); }
+body { font-size: 1rem; line-height: 1.7; }
+
+/* ===== حركة النجوم ===== */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.1; }
+  50%       { opacity: 0.9; }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0px,   0px); }
+  25%      { transform: translate(3px,  -5px); }
+  50%      { transform: translate(-2px, -8px); }
+  75%      { transform: translate(4px,  -4px); }
+}
+
+/* ===== اسم مزخرف بتدرج بنفسجي ===== */
+.name-gradient {
+  background: linear-gradient(135deg, #a78bfa 0%, #6c63ff 40%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 18px rgba(108,99,255,0.45));
+}
+
+/* ===== عناوين الأقسام ===== */
+.section-title { color: #9d97ff; }
+
+/* توهج الماوس — مخفي على شاشات اللمس */
+@media (hover: none) {
+  :root { --cursor-display: none; }
+}
+
+/* ===== تأثير الكروت ===== */
+.card { transition: border-color 0.2s, transform 0.2s; }
+.card:hover { border-color: #6c63ff; transform: translateY(-3px); }
+
+/* ===== تأثير الـ skill tags ===== */
+.skill-tag { transition: border-color 0.2s, color 0.2s; }
+.skill-tag:hover { border-color: #6c63ff; color: #9d97ff; }
