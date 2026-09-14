@@ -51,6 +51,14 @@ export default function Home() {
             </a>
           </div>
           {data[lang].ui.footer}
+          <div className="mt-3">
+            <a
+              href="/admin"
+              className="text-xs opacity-50 hover:opacity-100 hover:text-fore transition-opacity"
+            >
+              {lang === 'ar' ? 'الزوّار' : 'Visitors'}
+            </a>
+          </div>
         </footer>
       </div>
     </main>

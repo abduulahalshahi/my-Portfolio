@@ -18,7 +18,7 @@ const portfolio = {
 
     skills: {
       'Frontend':            ['React.js', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Material UI', 'Redux', 'Responsive Design'],
-      'Backend & Database':  ['PHP', 'Laravel', 'MySQL', 'REST APIs','.NET'],
+      'Backend & Database':  ['Node.js', 'C#', 'MySQL', 'REST APIs','.NET'],
       'Tools & Workflow':    ['Git', 'GitLab', 'Jira', 'Agile', 'OOP'],
     },
 
@@ -38,15 +38,6 @@ const portfolio = {
 
     projects: [
       {
-        name:  'Mostadam Frontend',
-        stack: 'React.js · Next.js · TypeScript · Redux · Material UI',
-        points: [
-          'Built reusable UI components using React Hooks and component-based architecture.',
-          'Implemented routing and state management with Redux.',
-          'Developed responsive interfaces optimized for multiple devices.',
-        ],
-      },
-      {
         name:  'World Countries Dashboard',
         stack: 'React.js · Next.js · REST API · Tailwind CSS',
         points: [
@@ -55,26 +46,42 @@ const portfolio = {
           'Designed a clean and responsive UI with detailed country cards and statistics.',
         ],
         link: 'https://dashboard-pi-gilt-92.vercel.app',
+        image: '/projects/world-countries-dashboard.png',
       },
       {
         name:  'Frontend Learning Platform',
-        stack: 'HTML · CSS · JavaScript',
+        stack: 'React.js · Next.js · JavaScript',
         points: [
           'Built a full Arabic-language educational platform teaching frontend development from scratch to professional level.',
           'Structured a step-by-step curriculum covering HTML, CSS, and JavaScript fundamentals.',
           'Designed to help learners build a portfolio and enter the job market with practical, real-world skills.',
         ],
-        link: 'https://jazzy-macaron-bfcc27.netlify.app/',
+        link: 'https://front-end-learn.vercel.app',
+        image: '/projects/frontend-learning-platform-cover.webp',
       },
       {
         name:  'Open Valor — Company Landing Page',
-        stack: '',
+        stack: 'Next.js · React · TypeScript · Material UI',
         points: [
           'Designed and built a professional landing page for a Saudi AI company specializing in enterprise solutions.',
           'Included sections for services, projects, testimonials, and a contact form to drive lead generation.',
           'Applied a modern dark theme with clean layout and optimized assets for fast loading.',
         ],
         link: 'https://openvalor.vercel.app',
+        image: '/projects/open-valor.png',
+      },
+      {
+        name:  'Interview Platform',
+        stack: 'ASP.NET Core · C# · MongoDB · Next.js 16 · TypeScript · React',
+        points: [
+          'Built an internal platform for managing job interviews, with separate access for admins and staff.',
+          'Developed the backend in C# on ASP.NET Core, with MongoDB via the official MongoDB.Driver.',
+          'Integrated AI-powered question generation tailored to each role and seniority level, with sample answers.',
+          'Built an automatic scoring system that grades each answer out of 10 and computes a final score out of 100.',
+          'Built the frontend with Next.js 16, TypeScript and React — fully bilingual (Arabic/English) and RTL-ready.',
+        ],
+        link: 'https://interview-app-n71y.onrender.com',
+        image: '/projects/interview-platform-cover.jpg',
       },
     ],
 
@@ -118,7 +125,7 @@ const portfolio = {
 
     skills: {
       'الواجهة الأمامية':           ['React.js', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Material UI', 'Redux', 'تصميم متجاوب'],
-      'الباك إند وقواعد البيانات':   ['PHP', 'Laravel', 'MySQL', 'REST APIs'],
+      'الباك إند وقواعد البيانات':   ['Node.js', 'C#', 'MySQL', 'REST APIs'],
       'الأدوات وسير العمل':          ['Git', 'GitLab', 'Jira', 'Agile', 'OOP', 'أنماط التصميم'],
     },
 
@@ -138,15 +145,6 @@ const portfolio = {
 
     projects: [
       {
-        name:  'واجهة مستدام الأمامية',
-        stack: 'React.js · Next.js · TypeScript · Redux · Material UI',
-        points: [
-          'بنيت مكونات UI قابلة لإعادة الاستخدام باستخدام React Hooks والمعمارية القائمة على المكونات.',
-          'نفّذت التوجيه وإدارة الحالة باستخدام Redux.',
-          'طوّرت واجهات متجاوبة محسّنة لأجهزة متعددة.',
-        ],
-      },
-      {
         name:  'لوحة تحكم دول العالم',
         stack: 'React.js · Next.js · REST API · Tailwind CSS',
         points: [
@@ -155,26 +153,42 @@ const portfolio = {
           'صمّمت واجهة نظيفة ومتجاوبة مع بطاقات تفصيلية لكل دولة.',
         ],
         link: 'https://dashboard-pi-gilt-92.vercel.app',
+        image: '/projects/world-countries-dashboard.png',
       },
       {
         name:  'منصة تعلم الفرونت إند',
-        stack: 'HTML · CSS · JavaScript',
+        stack: 'React.js · Next.js · JavaScript',
         points: [
           'بنيت منصة تعليمية عربية متكاملة لتعليم تطوير الواجهات من الصفر حتى الاحتراف.',
           'صممت منهجاً تدريجياً يغطي أساسيات HTML وCSS وJavaScript.',
           'تهدف المنصة إلى تأهيل المتعلمين لسوق العمل التقني وبناء مشاريع حقيقية.',
         ],
-        link: 'https://jazzy-macaron-bfcc27.netlify.app/',
+        link: 'https://front-end-learn.vercel.app',
+        image: '/projects/frontend-learning-platform-cover.webp',
       },
       {
         name:  'Open Valor — صفحة إعلانية للشركة',
-        stack: '',
+        stack: 'Next.js · React · TypeScript · Material UI',
         points: [
           'صممت وبنيت صفحة إعلانية احترافية لشركة سعودية متخصصة في الذكاء الاصطناعي للمؤسسات.',
           'تضمنت أقساماً للخدمات والمشاريع وشهادات العملاء ونموذج تواصل لاستقطاب العملاء.',
           'اعتمدت تصميماً داكناً حديثاً مع تخطيط نظيف وأصول محسّنة لسرعة التحميل.',
         ],
         link: 'https://openvalor.vercel.app',
+        image: '/projects/open-valor.png',
+      },
+      {
+        name:  'منصة المقابلات',
+        stack: 'ASP.NET Core · C# · MongoDB · Next.js 16 · TypeScript · React',
+        points: [
+          'بنيت منصة داخلية لإدارة المقابلات الوظيفية، بصلاحيات منفصلة للمديرين والموظفين.',
+          'طوّرت الـ Back-end بلغة C# على ASP.NET Core، مع MongoDB عبر مكتبة MongoDB.Driver الرسمية.',
+          'دمجت توليد أسئلة بالذكاء الاصطناعي مخصصة لكل دور ومستوى وظيفي مع إجابة نموذجية.',
+          'بنيت نظام تقييم آلي يقيّم كل إجابة من 10 ويحسب النتيجة النهائية من 100 تلقائياً.',
+          'بنيت الواجهة بـ Next.js 16 و TypeScript و React — ثنائية اللغة (عربي/إنجليزي) وبدعم كامل لاتجاه RTL.',
+        ],
+        link: 'https://interview-app-n71y.onrender.com',
+        image: '/projects/interview-platform-cover.jpg',
       },
     ],
 

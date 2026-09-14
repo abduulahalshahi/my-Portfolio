@@ -138,16 +138,6 @@ export default function Hero() {
             {lang === 'ar' ? 'تواصل معي' : 'Contact Me'}
           </button>
 
-          {/* زر تنزيل السيرة الذاتية */}
-          <a
-            href="/cv.pdf"
-            download="Abdullah_Alshahi_CV.pdf"
-            className="flex items-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3 border border-border hover:border-accent hover:text-[#9d97ff] text-fore font-semibold rounded-lg text-sm sm:text-base md:text-lg transition-all hover:-translate-y-0.5"
-          >
-            <IconDownload />
-            {p.ui.downloadCV}
-          </a>
-
         </div>
       </section>
 
@@ -168,7 +158,7 @@ export default function Hero() {
               <span className="font-semibold text-fore text-sm sm:text-base">Abdullah Alshahi — CV</span>
               <div className="flex items-center gap-2">
                 <a
-                  href="/cv.pdf"
+                  href="/new-CV.pdf"
                   download="Abdullah_Alshahi_CV.pdf"
                   className="flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-lg border border-border hover:border-accent hover:text-[#9d97ff] text-muted text-xs sm:text-sm transition-all"
                 >
@@ -186,7 +176,7 @@ export default function Hero() {
 
             {/* عارض PDF */}
             <iframe
-              src="/cv.pdf"
+              src="/new-CV.pdf"
               className="w-full"
               style={{ height: 'calc(90dvh - 56px)', border: 'none' }}
               title="CV"
